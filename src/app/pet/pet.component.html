@@ -1,0 +1,24 @@
+<p>pet Profile</p>
+<label>
+  Pet name:
+  <input type = "text" (change)="updateName($event.target.value)">
+</label>
+<br>
+
+<label>
+  Pet Image:
+  <input type = "url"(change)="updateImage($event.target.value)">
+</label>
+<br>
+
+<h3>Pet Name: {{petName}}</h3>
+<img [src]="petImage" style="max-width: 100%">
+
+
+<h3>Pet Name: {{petName1}}</h3>
+<img [src]="petImage1" style="max-width: 100%">
+
+
+
+
+
